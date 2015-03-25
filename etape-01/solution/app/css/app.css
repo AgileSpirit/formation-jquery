@@ -64,13 +64,13 @@ a {
 }
 
 .article-title {
-    color: #f39539;
-    border-bottom: 1px solid #f39539;
+    color: #e95325;
+    border-bottom: 1px solid #e95325;
     padding-bottom: 5px;
 }
 .article-title:hover {
-    color: #e95325;
-    border-bottom: 1px solid #e95325;
+    color: #f39539;
+    border-bottom: 1px solid #f39539;
 }
 .article-link {
 

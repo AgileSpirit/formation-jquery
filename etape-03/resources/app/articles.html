@@ -14,7 +14,7 @@
     <div class="view articles">
         <h1>Tiny<b>Blog</b></h1>
         <ul id="articles" class="article-list">
-            <li class="article-overview" style="display:none">
+            <li class="article-overview">
                 <div class="article-header">
                     <h2 class="article-title"><a class="article-link" href="#">{{article.title}}</a></h2>
                     <p class="article-meta">Publié par <span class="article-author">{{article.author}}</span> le <span class="article-publication-date">article.publicationDate</span></p>
@@ -41,6 +41,6 @@
         app.articlesCtrl.init(app.articleService);
     });      
     </script>
-    
+
 </body>
 </html>
