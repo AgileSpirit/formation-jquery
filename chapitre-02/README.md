@@ -1,8 +1,17 @@
-# Etape 3 : Développer une vue Web avec HTML5 + CSS3 + JS +jQuery
+# Etape 2 : Utiliser jQuery
 
 ## Objectifs
 
-Le but de cet exercice est de faire notre première page Web en mixant les différentes technos standard du Web.
+Avant d'aller plus loin, nous devons d'abord nous familiariser avec jQuery, la librairie JavaScript au coeur de notre future application.
+
+Le but de cet exercice est d'apprendre à utiliser les fonctionnalités basiques de jQuery :
+
+ * récupérer un élément du DOM, de différentes façons
+ * manipuler un élément du DOM
+ * ajouter du comportement à un élément du DOM
+ * enrichir / modifier le DOM
+ * faire des redirections Web "propres" (i.e. qui respectent le bouton Back)
+ * faire des boucles for
 
 ## Exercices
 

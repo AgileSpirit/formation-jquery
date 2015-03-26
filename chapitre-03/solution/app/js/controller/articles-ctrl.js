@@ -5,7 +5,7 @@ app.articlesCtrl = (function() {
     'use strict';
     
     // Dependencies
-    var service = null;
+    var service;
     
     // Model
     var articles = [];
@@ -18,20 +18,17 @@ app.articlesCtrl = (function() {
         var $articles = $('.article-list');
         
         // on récupère notre item template qui va nous permettre de le cloner pour chaque article
-        var $sample = $('li:first', $articles); 
-        
-        // on supprime la propriété qui le cache (laquelle sert à éviter le clignotement lors du chargement)
-        $sample.removeAttr('style'); 
+        var $articleTemplate = $('li:first', $articles);
         
         // on supprime l'item template qui a fini de jouer son rôle
-        $sample.remove(); 
+        $articleTemplate.remove();
         
         for (var i = 0; i < articles.length; i++) { 
             // on récupère l'article à afficher
             var article = articles[i];
 
             // on récupère les différents éléments graphiques qu'on va vouloir renseigner
-            var $article = $sample.clone(true);
+            var $article = $articleTemplate.clone(true);
             var $articleLink = $('.article-link', $article);
             var $articleAuthor = $('.article-author', $article);
             var $articlePublicationDate = $('.article-publication-date', $article);
