@@ -40,7 +40,7 @@ Le tout en techno full JavaScript / jQuery :-)
 La première étape consiste à définir l'organisation de notre projet, la structuration de nos sources. Il ne s'agit là que d'un début ; nous verrons au fur et à mesure des étapes comment améliorer et enrichir notre façon de faire, pour coller aux bons patterns de deisgn et d'architecture.
 
 Nous proposons l'arborescence suivante :
-
+```
 projet
   |
   |-- app : contient les sources relatives à l'application
@@ -59,7 +59,7 @@ projet
   |     + fichier-n.html
   |
   |-- lib : contient les différentes bibliothèques / outils utilisés
-
+```
 
 ### 2. Créer le fichier index.html
 

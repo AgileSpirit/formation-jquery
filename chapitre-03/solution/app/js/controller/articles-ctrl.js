@@ -1,6 +1,6 @@
 var app = app || {};
 
-app.articlesCtrl = (function() {
+app.articlesCtrl = function() {
     
     'use strict';
     
@@ -10,11 +10,11 @@ app.articlesCtrl = (function() {
     // Model
     var articles = [];
     
-    function loadArticles() {
+    function loadModel() {
         articles = service.getArticles();
     }
     
-    function renderArticles() {
+    function renderView() {
         var $articles = $('.article-list');
         
         // on récupère notre item template qui va nous permettre de le cloner pour chaque article
@@ -46,13 +46,13 @@ app.articlesCtrl = (function() {
         }
     }
     
-    function init(articleService) {
-        service = articleService;
-        loadArticles();
-        renderArticles();
+    function init() {
+        service = app.articleService;
+        loadModel();
+        renderView();
     }
     
     return {
         init: init
     };
-})();
+}();
